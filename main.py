@@ -77,8 +77,8 @@ def submit(s: requests.Session):
         "dezjzsj": "2021-04-11",             # date of second vaccination
         "dezwjzyy": "",
         # 第三针接种
-        "dszymjzqk": "6",                    # third vaccination situation  6.未接种
-        "dszjzsj": "2021-11-13",             # default time
+        "dszymjzqk": "3",                    # third vaccination situation  6.未接种
+        "dszjzsj": "2000-11-13",             # default time
         "dszwjzyy": "在吃其他药物",            # reason of non-vaccination
 
         "gtshryjkzk": "1",                   # health situation
