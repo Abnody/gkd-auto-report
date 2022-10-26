@@ -4,11 +4,11 @@ import os
 
 s = requests.Session()
 
-GKD_EMAIL = os.environ["GKD_EMAIL"]    # sep账号
-GKD_PASSWORD = os.environ["GKD_PASSWORD"]   # sep密码
-GKD_NUMBER = os.environ["GKD_NUMBER"]
-GKD_NAME = os.environ["GKD_NAME"]
-PUSH_TOKEN = os.environ["PUSH_TOKEN"]
+GKD_EMAIL = str(os.environ["GKD_EMAIL"])    # sep账号
+GKD_PASSWORD = str(os.environ["GKD_PASSWORD"])   # sep密码
+GKD_NUMBER = str(os.environ["GKD_NUMBER"])
+GKD_NAME = str(os.environ["GKD_NAME"])
+PUSH_TOKEN = str(os.environ["PUSH_TOKEN"])
 
 time_now = time.time()
 if time.timezone == 0:
