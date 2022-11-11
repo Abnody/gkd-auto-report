@@ -4,11 +4,11 @@ import os
 
 s = requests.Session()
 
-GKD_EMAIL = str(os.environ["GKD_EMAIL"])    # sep账号
-GKD_PASSWORD = str(os.environ["GKD_PASSWORD"])   # sep密码
-GKD_NUMBER = str(os.environ["GKD_NUMBER"])
-GKD_NAME = str(os.environ["GKD_NAME"])
-PUSH_TOKEN = str(os.environ["PUSH_TOKEN"])
+GKD_EMAIL = os.environ["GKD_EMAIL"]    # sep账号
+GKD_PASSWORD = os.environ["GKD_PASSWORD"]   # sep密码
+GKD_NUMBER = os.environ["GKD_NUMBER"]
+GKD_NAME = os.environ["GKD_NAME"]
+PUSH_TOKEN = os.environ["PUSH_TOKEN"]
 
 time_now = time.time()
 if time.timezone == 0:
@@ -70,15 +70,15 @@ def submit(s: requests.Session):
         "sfjshsjc": "1",                     # PCR test?       1.是 0.否
         # 第一针接种
         "dyzymjzqk": "3",                    # first vaccination situation  3.已接种
-        "dyzjzsj": "2021-03-21",             # date of first vaccination
+        "dyzjzsj": "2021-03-07",             # date of first vaccination
         "dyzwjzyy": "",
         # 第二针接种
         "dezymjzqk": "3",                    # second vaccination situation  3.已接种
-        "dezjzsj": "2021-04-11",             # date of second vaccination
+        "dezjzsj": "2021-03-28",             # date of second vaccination
         "dezwjzyy": "",
         # 第三针接种
-        "dszymjzqk": "3",                    # third vaccination situation  6.未接种
-        "dszjzsj": "2000-11-13",             # default time
+        "dszymjzqk": "6",                    # third vaccination situation  6.未接种
+        "dszjzsj": "2000-01-01",             # default time
         "dszwjzyy": "在吃其他药物",            # reason of non-vaccination
 
         "gtshryjkzk": "1",                   # health situation
